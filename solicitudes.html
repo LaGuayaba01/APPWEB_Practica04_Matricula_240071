@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Formulario de solicitud de una nueva cancion</h2>
+<hr>
+<form>
+    <fieldset>
+        <legend>Datos de la cancion: </legend>
+        <label for="nombreCancion">Nombre de la canción</label>
+        <input type="text"  name="nombreCancion" id="nombreCancion" size="50" required placeholder="Por favor ingresa el nombre de la cancion.."> </input>
+        <br><br>
+        <label for="autoresCancion">Autor (es): </label>
+        <input type="text" name="autoresCancion" id="autoresCancion" size="80" placeholder="Ingresa al autor con su nombre completo y separados por una coma (,)" required>
+        <br><br>
+        <label for="interpreteCancion">Interprete:</label>
+        <input type="text" name="interpreteCancion" id="interpreteCancion" size="50" placeholder="Cantante Solista o grupo musical que interprete la cancion" required>
+        <br><br>
+        <label for="generoMusical">Escoge el (los) genero(s) al que pertenecemos</label>
+        <select multiple>
+            <option>banda</option>
+            <option>Pop</option>
+            <option>Rock</option>
+            <option>Hip Hop</option>
+            <option>electronica</option>
+            <option>Jazz</option>
+            <option>instrumental</option>
+             <option>Clasica</option>
+            <option>Regional</option>
+            <optgroup label="Regional">
+                <option >huapango</option>
+                <option >mariachi</option>
+                <option >corridos</option>
+                <option >ranchera</option>
+                <option >cumbia</option>
+                <option >Norteña</option>
+                </optgroup>
+            <optgroup label="Latina">
+            <option>Reggae</option>
+            <option>Reggaeton</option>
+            <option>Trap</option>
+            <option>Salsa</option>
+            <option>Bachata</option>
+            </optgroup>
+            <optgroup label="Rock">
+                <option >Alternativo</option>
+                <option >Grunge</option>
+                <option >Britpop</option>
+                <option >Heavy metal</option>
+                <option >Indie</option>
+                <option >Progresivo</option>
+                <option >Punk</option>
+            </optgroup>
+           
+        </select>
+        <br><br>
+        <input type="checkbox" id="contenidoSugestivo" name="contenidoSugestivo">
+        <label for="contenidoSugestivo">contenido sugestivo (palabra altisomantes,doble sentido, frases alusivas, sexistas o de consumo de estupacientes)</label>
+        
+        <hr>
+        <h3>Letra de la cancion</h3>
+        <textarea cols="200" row="10" style=" resize:none; text-align:center;" > </textarea>
+        <h3>Multimedia: </h3>
+        <label for="audioCancion" >Archivo de audio(p.)</label>
+        <input type="file" id="audioCancion" name="audioCancion" accept=".mp3, .wav, .midi, .acc, .wna">
+        <br><br>
+        <label for="videoCancion"> Archivo de video</label>
+        <input type="file" id="videoCancion" name="videoCancion" accept=".mp4, .avi, .webq, .mov, .wmv, .mkv, flv.">
+        <br>
+        <br>
+<label for="portaCanciones">Archivo de imagen</label>
+<input type="file" id="portadaCanciones" name="portadaCanciones" accept=".jpg, .jpeg, .bmp, web">
+
+        <br><br>
+        <input type="submit" value="Registrar Cancion">
+
+
+
+    </fieldset>
+</form>
+
+</body>
+</html>
