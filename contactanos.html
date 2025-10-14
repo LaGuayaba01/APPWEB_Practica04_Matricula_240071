@@ -3,10 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cancionero- Matricula: ¿tienes alguna duda?</title>
+    <title>Cancionero- 240071: ¿tienes alguna duda?</title>
      <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
     <h2>Formulario de contacto</h2>
+    <form>
+        <fieldset>
+            <legend>Contactanos:</legend>
+
+            <label for="nombreCompleto">Nombre:</label>
+            <input type="text" id="nombreCompleto" name="nombreCompleto" size="50" required placeholder="Deja tu nombre para contactarte...">
+            <br><br>
+
+            <label for="correoElectronico">Correo Electrónico:</label>
+            <input type="email" id="correoElectronico" name="correoElectronico" size="50" required placeholder="correo@dominio.ext">
+            <br><br>
+
+            <label for="numeroTelefonico">Número Telefónico:</label>
+            <select>
+                <option value="">Fijo</option>
+                <option value="">Movil</option>
+            </select>
+            <input type="tel" id="numeroTelefonico" name="numeroTelefonico" size="30" placeholder="p.e:(555)-548-24-14">
+            <br><br>
+
+            <label for="asuntoMensaje">Asunto:</label><br>
+            <input id="asuntoMensaje" name="asuntoMensaje" size="80" placeholder="Titulo del mensaje">
+            <br><br>
+
+            <label for="mensaje">Describe tu inquietud:</label><br>
+            <textarea id="mensaje" name="mensaje" cols="80" rows="10" style="resize: none;"></textarea>
+           
+        </fieldset>
+         <br><br>
+
+            <input type="submit" value="Enviar Registro">
+            <input type="reset" value="Limpiar">
+    </form>
+
 </body>
 </html>
